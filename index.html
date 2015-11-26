@@ -7,7 +7,7 @@
   <meta name="keywords" content="">
   <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Amaze UI Examples</title>
+  <title>用户详情</title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -31,150 +31,332 @@
   <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
-  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-  <!--
-  <link rel="canonical" href="http://www.example.com/">
-  -->
-
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-<!--[if lte IE 9]>
-<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
-  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
-  以获得更好的体验！</p>
-<![endif]-->
 
-<!-- 页面内容 开发时删除 -->
-<div class="am-g am-g-fixed am-margin-top">
-  <div class="am-u-sm-12">
-    <h1>你好世界！小可 Amaze UI 模板。</h1>
-
-    <p>这是一个基础的页面，引入 Amaze UI 的 css 、js
-      文件。如果你已经熟读文档，使用时删除内容开始开发即可。建议使用前先阅读文档，以提高开发效率。</p>
-  </div>
-</div>
-<div class="am-g am-g-fixed am-margin-top">
-  <p class="am-u-sm-12">下载包里面有 4 个常见布局示例，供开发者参考。</p>
-
-  <div class="am-u-sm-12">
-    <div class="am-g">
-      <div class="am-u-sm-12 am-u-md-3">
-        <a href="landing.html"><img class="am-img-thumbnail"
-                                    src="assets/i/examples/landingPage.png"
-                                    alt="展示页面"/></a>
-      </div>
-      <div class="am-u-sm-12 am-u-md-9">
-        <h3>展示页面</h3>
-
-        <p>
-          CSS 部分：<a class="am-badge am-badge-success" href="/css/grid">网格</a> <a
-          class="am-badge am-badge-success" href="/css/icon">图标</a> <a
-          class="am-badge am-badge-success" href="/css/button">按钮</a> <a
-          class="am-badge am-badge-success" href="/css/form">表单</a> <a
-          class="am-badge am-badge-success" href="/css/article">文章页</a> <a
-          class="am-badge am-badge-success" href="/css/topbar">导航条</a> <a
-          class="am-badge am-badge-success" href="/css/utility">辅助类</a><br/>
-          JS 插件部分：<a class="am-badge am-badge-primary"
-                     href="/javascript/dropdown">下拉组件</a> <a
-          class="am-badge am-badge-primary"
-          href="/javascript/scrollspy">滚动侦测</a>
-        </p>
-      </div>
-    </div>
-    <div class="am-g am-margin-top">
-      <div class="am-u-sm-12 am-u-md-3">
-        <a href="login.html"><img class="am-img-thumbnail"
-                                  src="assets/i/examples/loginPage.png"
-                                  alt="登录页面"/></a>
-      </div>
-      <div class="am-u-sm-12 am-u-md-9">
-        <h3>登录页面</h3>
-
-        <p>
-          CSS 部分：<a class="am-badge am-badge-success" href="/css/grid">网格</a> <a
-          class="am-badge am-badge-success" href="/css/icon">图标</a> <a
-          class="am-badge am-badge-success" href="/css/button">按钮</a> <a
-          class="am-badge am-badge-success" href="/css/button-group">按钮组</a> <a
-          class="am-badge am-badge-success" href="/css/form">表单</a>
-        </p>
-      </div>
-    </div>
-    <div class="am-g am-margin-top">
-      <div class="am-u-sm-12 am-u-md-3">
-        <a href="blog.html"><img class="am-img-thumbnail"
-                                 src="assets/i/examples/blogPage.png"
-                                 alt="博客页面"/></a>
-      </div>
-      <div class="am-u-sm-12 am-u-md-9">
-        <h3>博客页面</h3>
-
-        <p>
-          CSS 部分：<a class="am-badge am-badge-success" href="/css/grid">网格</a> <a
-          class="am-badge am-badge-success" href="/css/block-grid">等宽布局</a> <a
-          class="am-badge am-badge-success" href="/css/icon">图标</a> <a
-          class="am-badge am-badge-success" href="/css/button">按钮</a> <a
-          class="am-badge am-badge-success" href="/css/panel">面板</a> <a
-          class="am-badge am-badge-success" href="/css/list">列表</a> <a
-          class="am-badge am-badge-success" href="/css/pagination">分页</a><br/>
-          JS 插件部分：<a class="am-badge am-badge-primary"
-                     href="/css/dropdown">下拉组件</a>
-        </p>
-      </div>
-    </div>
-    <div class="am-g am-margin-top">
-      <div class="am-u-sm-12 am-u-md-3">
-        <a href="sidebar.html"><img class="am-img-thumbnail"
-                                    src="assets/i/examples/sidebarPage.png"
-                                    alt="博客侧栏页面"/></a>
-      </div>
-      <div class="am-u-sm-12 am-u-md-9">
-        <h3>博客侧栏页面</h3>
-
-        <p>
-          CSS 部分：<a class="am-badge am-badge-success" href="/css/grid">网格</a> <a
-          class="am-badge am-badge-success" href="/css/article">文章页</a> <a
-          class="am-badge am-badge-success" href="/css/comment">评论列表</a> <a
-          class="am-badge am-badge-success" href="/css/button">按钮</a> <a
-          class="am-badge am-badge-success" href="/css/icon">图标</a> <a
-          class="am-badge am-badge-success" href="/css/list">列表</a> <a
-          class="am-badge am-badge-success" href="/css/utility">辅助类</a><br/>
-          JS 插件部分：<a class="am-badge am-badge-primary"
-                     href="/javascript/offcanvas">侧边栏组件</a>
-        </p>
-      </div>
-    </div>
-    <hr/>
-    <h2>Web 组件示例</h2>
-    <ul>
-      <li><a href="widget.basic.html">widget.basic.html</a> 使用了 <a
-        href="http://amazeui.org/widgets">Web 组件</a> 的 HTML 结构和样式，但没用使用模板在前端渲染数据，供通过后端渲染数据的用户参考。</li>
-      <li><a href="widget.html">widget.html</a> 是 Web 组件的展示，更多细节查看：<a
-        href="http://amazeui.org/widgets">Web 组件</a></li>
-    </ul>
-    <h3>开始创建你的网页吧。</h3>
-  </div>
+<!-- 头部菜单栏 -->
+<div style="width:100%;height:50px;">
+  <table width="100%">
+    <tr style="text-align:center;font-size: 1.3em;">
+      <td width="15%"></td>
+      <td width="13%" style="padding-top:8px;padding-bottom:7px;border-bottom:2px solid #000;"><a href="#" target="_self">最热</a></td>
+      <td width="15%"></td>
+      <td width="13%" style="padding-top:8px;padding-bottom:7px;">最新</td>
+      <td width="15%"></td>
+      <td width="13%" style="padding-top:8px;padding-bottom:7px;">关注</td>
+      <td width="16%"></td>
+    </tr>
+  </table>
 </div>
 
-<footer class="am-margin-top">
-  <hr/>
-  <p class="am-text-center">
-    <small>by The AmazeUI Team.</small>
-  </p>
-</footer>
-<!-- 以上页面内容 开发时删除 -->
+<!-- 间隔块 -->
+<div style="width:100%;height:15px;background-color:#CCC;"></div>
 
-<!--[if lt IE 9]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
+<!-- 内容块 -->
+<div>
+
+    <!-- 内容详情 -->
+    <div>
+        <!-- 内容块头-->
+        <div style="padding-left:10px;padding-top:10px;">
+            <div style="float:left;">
+                <img class="am-img-thumbnail am-circle" src="assets/images/avatar.png" width="70" height="70"/>
+            </div>
+            <div style="float:left;padding-top:10px;padding-left:5px;">
+                <span style="font-size:18px;color:#666;">随风飘扬</span><span class="am-badge am-badge-warning am-round am-margin-left-xs">认证</span>
+                <br />
+                <span style="color:#999;">10分钟前</span>
+            </div>
+        </div>
+
+        <!-- 内容块躯体 -->
+        <div style="float:right;padding-left:10px;">
+            <figure data-am-widget="figure" class="am am-figure am-figure-default" data-am-figure="{pureview: 'true'}">
+                <img src="assets/images/example.png" data-rel="assets/images/example.png" alt="图片介绍"/>
+                <figcaption class="am-figure-capition-btm">
+                大师有没有，帮我看看这串怎么样？
+                </figcaption>
+            </figure>
+
+            <!-- 标签 -->
+            <div style="float:left;padding-left:10px;">
+                <span class="am-badge am-badge-secondary am-round">DIY</span>
+                <span class="am-badge am-badge-secondary am-round">求鉴定</span>
+                <span class="am-badge am-badge-secondary am-round">自拍照</span>
+                <span class="am-badge am-badge-secondary am-round">小叶紫檀</span>
+                <span class="am-badge am-badge-secondary am-round">神器</span>
+            </div>
+
+            <hr data-am-widget="divider" style="margin-top:50px" class="am-divider am-divider-default" />
+
+            <!-- 回复列表 -->
+            <div>
+                <div style="float:left;padding-left:10px;">
+                    <span class="am-icon-thumbs-o-up am-icon-xs am-margin-right-sm"></span>
+                    <img class="am-img-thumbnail am-circle" src="assets/images/avatar_1.png" width="40" height="40"/>
+                    <img class="am-img-thumbnail am-circle" src="assets/images/avatar_2.png" width="40" height="40"/>
+                    <img class="am-img-thumbnail am-circle" src="assets/images/avatar_3.png" width="40" height="40"/>
+                    <img class="am-img-thumbnail am-circle" src="assets/images/avatar_4.png" width="40" height="40"/>
+                    <span class="am-badge am-badge-primary am-round am-margin-left-xs">4赞</span>
+                </div>
+
+                <br />
+                <br />
+
+                <div style="margin-top:2px;padding-left:10px;">
+                    <span style="float:left;" class="am-icon-comment-o am-icon-xs am-margin-right-sm"></span>
+                    <div style="float:left;padding-bottom:10px;">
+                        <ul style="font-size:18px;list-style:none;margin:0;padding:0;">
+                            <li>千手兰翔：<span style="font-size:17px;color:#666;">棒棒哒</span></li>
+                            <li>拉布拉多：<span style="font-size:17px;color:#666;">不咋地丫</span></li>
+                            <li>simon：<span style="font-size:17px;color:#666;">有太多了这种</span></li>
+                            <li>大胸弟：<span style="font-size:17px;color:#666;">多少钱</span></li>
+                            <li>号角响起：<span style="font-size:17px;color:#666;">信春哥，得永生</span></li>
+                            <li><span style="font-size:17px;color:#CCC;">查看全部21条评论</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <table width="100%" style="border-top:1px solid #CCC;">
+                    <tr style="text-align:center;">
+                        <td width="50%" style="padding:10px 0;"><span class="am-icon-thumbs-o-up am-icon-xs am-margin-right-sm"></span>赞</td>
+                        <td width="50%" style="padding:10px 0; border-left:1px solid #CCC;"><span class="am-icon-suitcase am-icon-xs am-margin-right-sm"></span>想要</td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- 间隔块 -->
+    <div style="float:left;width:100%;height:15px;background-color:#ccc;"></div>
+
+
+    <div>
+    <!-- 内容块头-->
+    <div style="padding-left:10px;padding-top:10px;">
+      <div style="float:left;">
+        <img class="am-img-thumbnail am-circle" src="assets/images/avatar.png" width="70" height="70"/>
+      </div>
+      <div style="float:left;padding-top:10px;padding-left:5px;">
+        <span style="font-size:18px;color:#666;">随风飘扬</span><span class="am-badge am-badge-warning am-round am-margin-left-xs">认证</span>
+        <br />
+        <span style="color:#999;">10分钟前</span>
+      </div>
+    </div>
+
+    <!-- 内容块躯体 -->
+    <div style="float:right;padding-left:10px;">
+      <figure data-am-widget="figure" class="am am-figure am-figure-default" data-am-figure="{pureview: 'true'}">
+        <img src="assets/images/example.png" data-rel="assets/images/example.png" alt="图片介绍"/>
+        <figcaption class="am-figure-capition-btm">
+          大师有没有，帮我看看这串怎么样？
+        </figcaption>
+      </figure>
+
+      <!-- 标签 -->
+      <div style="float:left;padding-left:10px;">
+        <span class="am-badge am-badge-secondary am-round">DIY</span>
+        <span class="am-badge am-badge-secondary am-round">求鉴定</span>
+        <span class="am-badge am-badge-secondary am-round">自拍照</span>
+        <span class="am-badge am-badge-secondary am-round">小叶紫檀</span>
+        <span class="am-badge am-badge-secondary am-round">神器</span>
+      </div>
+
+      <hr data-am-widget="divider" style="margin-top:50px" class="am-divider am-divider-default" />
+
+      <!-- 回复列表 -->
+      <div>
+        <div style="float:left;padding-left:10px;">
+          <span class="am-icon-thumbs-o-up am-icon-xs am-margin-right-sm"></span>
+          <img class="am-img-thumbnail am-circle" src="assets/images/avatar_1.png" width="40" height="40"/>
+          <img class="am-img-thumbnail am-circle" src="assets/images/avatar_2.png" width="40" height="40"/>
+          <img class="am-img-thumbnail am-circle" src="assets/images/avatar_3.png" width="40" height="40"/>
+          <img class="am-img-thumbnail am-circle" src="assets/images/avatar_4.png" width="40" height="40"/>
+          <span class="am-badge am-badge-primary am-round am-margin-left-xs">4赞</span>
+        </div>
+
+        <br />
+        <br />
+
+        <div style="margin-top:2px;padding-left:10px;">
+          <span style="float:left;" class="am-icon-comment-o am-icon-xs am-margin-right-sm"></span>
+          <div style="float:left;padding-bottom:10px;">
+            <ul style="font-size:18px;list-style:none;margin:0;padding:0;">
+              <li>千手兰翔：<span style="font-size:17px;color:#666;">棒棒哒</span></li>
+              <li>拉布拉多：<span style="font-size:17px;color:#666;">不咋地丫</span></li>
+              <li>simon：<span style="font-size:17px;color:#666;">有太多了这种</span></li>
+              <li>大胸弟：<span style="font-size:17px;color:#666;">多少钱</span></li>
+              <li>号角响起：<span style="font-size:17px;color:#666;">信春哥，得永生</span></li>
+              <li><span style="font-size:17px;color:#CCC;">查看全部21条评论</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <table width="100%" style="border-top:1px solid #CCC;">
+          <tr style="text-align:center;">
+            <td width="50%" style="padding:10px 0;"><span class="am-icon-thumbs-o-up am-icon-xs am-margin-right-sm"></span>赞</td>
+            <td width="50%" style="padding:10px 0; border-left:1px solid #CCC;"><span class="am-icon-suitcase am-icon-xs am-margin-right-sm"></span>想要</td>
+          </tr>
+        </table>
+      </div>
+
+
+    </div>
+
+  </div>
+
+    <!-- 间隔块 -->
+    <div style="float:left;width:100%;height:15px;background-color:#CCC;"></div>
+
+    <div>
+    <!-- 内容块头-->
+    <div style="padding-left:10px;padding-top:10px;">
+      <div style="float:left;">
+        <img class="am-img-thumbnail am-circle" src="assets/images/avatar.png" width="70" height="70"/>
+      </div>
+      <div style="float:left;padding-top:10px;padding-left:5px;">
+        <span style="font-size:18px;color:#666;">随风飘扬</span><span class="am-badge am-badge-warning am-round am-margin-left-xs">认证</span>
+        <br />
+        <span style="color:#999;">10分钟前</span>
+      </div>
+    </div>
+
+    <!-- 内容块躯体 -->
+    <div style="float:right;padding-left:10px;">
+      <figure data-am-widget="figure" class="am am-figure am-figure-default" data-am-figure="{pureview: 'true'}">
+        <img src="assets/images/example.png" data-rel="assets/images/example.png" alt="图片介绍"/>
+        <figcaption class="am-figure-capition-btm">
+          大师有没有，帮我看看这串怎么样？
+        </figcaption>
+      </figure>
+
+      <!-- 标签 -->
+      <div style="float:left;padding-left:10px;">
+        <span class="am-badge am-badge-secondary am-round">DIY</span>
+        <span class="am-badge am-badge-secondary am-round">求鉴定</span>
+        <span class="am-badge am-badge-secondary am-round">自拍照</span>
+        <span class="am-badge am-badge-secondary am-round">小叶紫檀</span>
+        <span class="am-badge am-badge-secondary am-round">神器</span>
+      </div>
+
+      <hr data-am-widget="divider" style="margin-top:50px" class="am-divider am-divider-default" />
+
+      <!-- 回复列表 -->
+      <div>
+        <div style="float:left;padding-left:10px;">
+          <span class="am-icon-thumbs-o-up am-icon-xs am-margin-right-sm"></span>
+          <img class="am-img-thumbnail am-circle" src="assets/images/avatar_1.png" width="40" height="40"/>
+          <img class="am-img-thumbnail am-circle" src="assets/images/avatar_2.png" width="40" height="40"/>
+          <img class="am-img-thumbnail am-circle" src="assets/images/avatar_3.png" width="40" height="40"/>
+          <img class="am-img-thumbnail am-circle" src="assets/images/avatar_4.png" width="40" height="40"/>
+          <span class="am-badge am-badge-primary am-round am-margin-left-xs">4赞</span>
+        </div>
+
+        <br />
+        <br />
+
+        <div style="margin-top:2px;padding-left:10px;">
+          <span style="float:left;" class="am-icon-comment-o am-icon-xs am-margin-right-sm"></span>
+          <div style="float:left;padding-bottom:10px;">
+            <ul style="font-size:18px;list-style:none;margin:0;padding:0;">
+              <li>千手兰翔：<span style="font-size:17px;color:#666;">棒棒哒</span></li>
+              <li>拉布拉多：<span style="font-size:17px;color:#666;">不咋地丫</span></li>
+              <li>simon：<span style="font-size:17px;color:#666;">有太多了这种</span></li>
+              <li>大胸弟：<span style="font-size:17px;color:#666;">多少钱</span></li>
+              <li>号角响起：<span style="font-size:17px;color:#666;">信春哥，得永生</span></li>
+              <li><span style="font-size:17px;color:#CCC;">查看全部21条评论</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <table width="100%" style="border-top:1px solid #CCC;">
+          <tr style="text-align:center;">
+            <td width="50%" style="padding:10px 0;"><span class="am-icon-thumbs-o-up am-icon-xs am-margin-right-sm"></span>赞</td>
+            <td width="50%" style="padding:10px 0; border-left:1px solid #CCC;"><span class="am-icon-suitcase am-icon-xs am-margin-right-sm"></span>想要</td>
+          </tr>
+        </table>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+    <!-- 查看更多 -->
+    <div style="text-align:center;margin-bottom:10px;">
+        <hr data-am-widget="divider" style="dispaly:none;" class="am-divider am-divider-default"/>
+        <span>查看更多</span>
+    </div>
+
+</div>
+
+
+<!-- 菜单栏 -->
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default " id="">
+  <ul class="am-navbar-nav am-cf am-avg-sm-4">
+	  <li >
+		<a href="tel:123456789" class="">
+			  <span class="am-icon-home"></span>
+			<span class="am-navbar-label">首页</span>
+		</a>
+	  </li>
+	  <li>
+		<a href="###" class="">
+			  <span class="am-icon-compass"></span>
+			<span class="am-navbar-label">发现</span>
+		</a>
+	  </li>
+	  <li>
+		<a href="###" class="">
+			  <span class="am-icon-camera am-icon-lg"></span>
+		</a>
+	  </li>
+	  <li>
+		<a href="###" class="">
+			  <span class="am-icon-comment"></span>
+			<span class="am-navbar-label">消息</span>
+		</a>
+	  </li>
+	  <li>
+		<a href="###" class="">
+			  <span class="am-icon-male"></span>
+			<span class="am-navbar-label">我的</span>
+		</a>
+	  </li>
+  </ul>
+</div>
+
+<!-- 回到顶部 -->
+<div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+	<a href="#top" title="回到顶部">
+		<span class="am-gotop-title">回到顶部</span>
+		<i class="am-gotop-icon am-icon-chevron-up"></i>
+	</a>
+</div>
 
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="assets/js/jquery.min.js"></script>
 <!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
-
 </body>
 </html>
