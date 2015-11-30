@@ -31,6 +31,30 @@
   <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
+	<!-- Add to homescreen for Safari on iOS -->
+	<!-- 添加至主屏, 从主屏进入会隐藏地址栏和状态栏, 全屏(content="yes") -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<!-- 系统顶栏的颜色(content = black、white 和 black-translucent)选其一就可以 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<!-- 指定标题 -->
+	<meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+
+	<!-- 指定icon, 建议PNG格式-->
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+
+	<!--
+   使用rel="apple-touch-icon"属性为“增加高光光亮的图标”, 系统会自动为图标添加圆角及高光；
+   使用rel="apple-touch-icon-precomposed"属性为“设计原图图标”；
+  -->
+
+	<link rel="apple-touch-icon-precomposed" href="/path/to/icon72x72@2x.png">
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
@@ -47,20 +71,19 @@
 	<div class="am-list-news-bd">
 		<ul class="am-list">
 			<li class="am-g am-list-item-dated">
-				
-				<a href="##" class="am-list-item-hd "><img src="assets/images/home.png" width="35px" height="35px" style="margin-right:10px">官方商城</a>
+				<a href="##" class="am-list-item-hd" style="margin-left:20px;"><img src="assets/images/home.png" width="35px" height="35px" style="margin-right:10px">官方商城</a>
 				<span class="am-list-date">></span>
 			</li>
 			<li class="am-g am-list-item-dated">
-				<a href="##" class="am-list-item-hd "><img src="assets/images/legal.png" width="35px" height="35px" style="margin-right:10px">拍卖场</a>
+				<a href="##" class="am-list-item-hd" style="margin-left:20px;"><img src="assets/images/legal.png" width="35px" height="35px" style="margin-right:10px">拍卖场</a>
 				<span class="am-list-date">></span>
 			</li>
 			<li class="am-g am-list-item-dated">
-				<a href="##" class="am-list-item-hd "><img src="assets/images/book.png" width="35px" height="35px" style="margin-right:10px">文玩知识</a>
+				<a href="##" class="am-list-item-hd" style="margin-left:20px;"><img src="assets/images/book.png" width="35px" height="35px" style="margin-right:10px">文玩知识</a>
 				<span class="am-list-date">></span>
 			</li>
 			<li class="am-g am-list-item-dated">
-				<a href="##" class="am-list-item-hd "><img src="assets/images/book.png" width="35px" height="35px" style="margin-right:10px">玉石定制</a>
+				<a href="##" class="am-list-item-hd" style="margin-left:20px;"><img src="assets/images/book.png" width="35px" height="35px" style="margin-right:10px">玉石定制</a>
 				<span class="am-list-date">></span>
 			</li>
 		</ul>
@@ -79,37 +102,37 @@
 
 <!-- 菜单栏 -->
 <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default " id="">
-  <ul class="am-navbar-nav am-cf am-avg-sm-4">
-	  <li >
-		<a href="tel:123456789" class="">
-			  <span class="am-icon-home"></span>
-			<span class="am-navbar-label">首页</span>
-		</a>
-	  </li>
-	  <li>
-		<a href="###" class="">
-			  <span class="am-icon-compass"></span>
-			<span class="am-navbar-label">发现</span>
-		</a>
-	  </li>
-	  <li>
-		<a href="###" class="">
-			  <span class="am-icon-camera am-icon-lg"></span>
-		</a>
-	  </li>
-	  <li>
-		<a href="###" class="">
-			  <span class="am-icon-comment"></span>
-			<span class="am-navbar-label">消息</span>
-		</a>
-	  </li>
-	  <li>
-		<a href="###" class="">
-			  <span class="am-icon-male"></span>
-			<span class="am-navbar-label">我的</span>
-		</a>
-	  </li>
-  </ul>
+	<ul class="am-navbar-nav am-cf am-avg-sm-4">
+		<li >
+			<a href="./index.html" class="">
+				<span class="am-icon-home"></span>
+				<span class="am-navbar-label">首页</span>
+			</a>
+		</li>
+		<li>
+			<a href="./discover.html" class="">
+				<span class="am-icon-compass"></span>
+				<span class="am-navbar-label">发现</span>
+			</a>
+		</li>
+		<li>
+			<a href="###" class="">
+				<span class="am-icon-camera am-icon-lg"></span>
+			</a>
+		</li>
+		<li>
+			<a href="./message.html" class="">
+				<span class="am-icon-comment"></span>
+				<span class="am-navbar-label">消息</span>
+			</a>
+		</li>
+		<li>
+			<a href="./me.html" class="">
+				<span class="am-icon-male"></span>
+				<span class="am-navbar-label">我的</span>
+			</a>
+		</li>
+	</ul>
 </div>
 
 <!-- 回到顶部 -->
