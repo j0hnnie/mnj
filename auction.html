@@ -7,7 +7,7 @@
   <meta name="keywords" content="">
   <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>发帖</title>
+  <title>拍卖</title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -63,7 +63,30 @@
 <!-- 内容身体 -->
 <div>
   <div>
-    <textarea style="width:100%;line-height:normal;line-height:50px;resize:none;border-bottom: 0px;" placeholder="说点什么吧..."></textarea>
+    <div class="am-form-group">
+      <label for="auction-name">名称</label>
+      <input type="text" name="name" id="auction-name" placeholder="请输入名称"/>
+    </div>
+    <div class="am-form-group">
+      <label for="auction-param">参数</label>
+      <input type="text" name="name" id="auction-param" placeholder="请输入参数"/>
+    </div>
+    <div class="am-form-group">
+      <label for="auction-description">简介</label>
+      <input type="text" name="name" id="auction-description" placeholder="请输入简介"/>
+    </div>
+    <div class="am-form-group">
+      <label for="auction-starting-price">起拍价</label>
+      <input type="text" name="name" id="auction-starting-price" placeholder="请输入起拍价"/>
+    </div>
+    <div class="am-form-group">
+      <label for="auction-lowest-price">最低加价幅度</label>
+      <input type="text" name="name" id="auction-lowest-price" placeholder="请输入最低加价幅度"/>
+    </div>
+    <div class="am-form-group">
+      <label for="auction-promise">承诺</label>
+      <input type="text" name="name" id="auction-promise" placeholder="请输入承诺" value="【7天无理由退换】、【包邮】、【保真】"/>
+    </div>
   </div>
 
   <div>
