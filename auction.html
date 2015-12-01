@@ -63,33 +63,26 @@
 <!-- 内容身体 -->
 <div>
   <div>
-    <div class="am-form-group">
-      <label for="auction-name">名称</label>
-      <input type="text" name="name" id="auction-name" placeholder="请输入名称"/>
-    </div>
-    <div class="am-form-group">
-      <label for="auction-param">参数</label>
-      <input type="text" name="name" id="auction-param" placeholder="请输入参数"/>
-    </div>
-    <div class="am-form-group">
-      <label for="auction-description">简介</label>
-      <input type="text" name="name" id="auction-description" placeholder="请输入简介"/>
-    </div>
-    <div class="am-form-group">
-      <label for="auction-starting-price">起拍价</label>
-      <input type="text" name="name" id="auction-starting-price" placeholder="请输入起拍价"/>
-    </div>
-    <div class="am-form-group">
-      <label for="auction-lowest-price">最低加价幅度</label>
-      <input type="text" name="name" id="auction-lowest-price" placeholder="请输入最低加价幅度"/>
-    </div>
-    <div class="am-form-group">
-      <label for="auction-promise">承诺</label>
-      <input type="text" name="name" id="auction-promise" placeholder="请输入承诺" value="【7天无理由退换】、【包邮】、【保真】"/>
-    </div>
+     <table style="width:100%;">
+       <tr>
+         <td style="width:100%;"><input type="text" name="name" id="auction-name" placeholder="名  称" style="width:100%;height:40px;line-height:35px;border:0;border-bottom:1px solid #CCC; padding-left:10px;" /></td>
+       </tr>
+       <tr>
+         <td><input type="text" name="name" id="auction-param" placeholder="参  数" style="width:100%;height:40px;line-height:40px;border:0;border-bottom:1px solid #CCC; padding-left:10px;" /></td>
+       </tr>
+       <tr>
+         <td><input type="text" name="name" id="auction-desc" placeholder="简  介" style="width:100%;height:40px;line-height:40px;border:0;border-bottom:1px solid #CCC; padding-left:10px;" /></td>
+       </tr>
+       <tr>
+         <td><input type="text" name="name" id="auction-start-price" placeholder="起 拍 价" style="width:100%;height:40px;line-height:40px;border:0;border-bottom:1px solid #CCC; padding-left:10px;" /></td>
+       </tr>
+       <tr>
+         <td><input type="text" name="name" id="auction-lowest-price" placeholder="最低加价幅度" style="width:100%;height:40px;line-height:40px;border:0;border-bottom:1px solid #CCC; padding-left:10px;" /></td>
+       </tr>
+     </table>
   </div>
 
-  <div>
+  <div style="padding-bottom:10px;">
     <ul data-am-widget="gallery" class="am-gallery am-avg-sm-3
   am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{ pureview: true }" >
       <li>
@@ -128,29 +121,12 @@
 <div style="width:100%;height:10px;background-color:#CCC;"></div>
 
 <!-- 标签 -->
-<div>
-  <div style="float:left;padding:15px 30px;">
-    <span style="font-size:17px;color:#999;">最多可输入4个标签</span>
-  </div>
-  <div style="float:left;padding-left:15px;line-height: 40px;">
-    <span class="am-badge am-badge-secondary am-round" style="font-size:20px;margin:5px 5px;">DIY</span>
-    <span class="am-badge am-badge-secondary am-round" style="font-size:20px;margin:5px 5px;">求鉴定</span>
-    <span class="am-badge am-badge-secondary am-round" style="font-size:20px;margin:5px 5px;">自拍照</span>
-    <span class="am-badge am-badge-secondary am-round" style="font-size:20px;margin:5px 5px;">小叶紫檀</span>
-    <span class="am-badge am-badge-secondary am-round" style="font-size:20px;margin:5px 5px;">小叶紫檀</span>
-    <span class="am-badge am-badge-secondary am-round" style="font-size:20px;margin:5px 5px;">小叶紫檀</span>
-    <span class="am-badge am-badge-secondary am-round" style="font-size:20px;margin:5px 5px;">小叶紫檀</span>
-    <span class="am-badge am-badge-secondary am-round" style="font-size:20px;margin:5px 5px;">12312312312321</span>
-    <span class="am-badge am-badge-danger am-round" style="font-size:20px;margin:5px 10px;">添加</span>
-  </div>
-  <div style="float:left;width:100%;text-align:center;padding-top:30px;">
-    <span class="am-btn am-btn-primary am-btn-xl am-round">发  布</span>
-  </div>
-
+<div style="float:left;width:100%;text-align:center;padding-top:20px;">
+  <span class="am-btn am-btn-primary am-round">拍  卖</span>
 </div>
 
 <!-- 菜单栏 -->
-<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default " id="">
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="">
   <ul class="am-navbar-nav am-cf am-avg-sm-4">
     <li >
       <a href="./index.html" class="">
